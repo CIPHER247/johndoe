@@ -1,0 +1,76 @@
+@media (max-width: 750px) {
+  nav ul {
+    display: none;
+    height: 45px;
+  }
+
+  nav .name {
+    width: 90%;
+  }
+  nav .mobileToggle {
+    display: flex;
+    width: 10%;
+    align-items: center;
+  }
+  section#home {
+    /* height: 50vh; */
+    height: auto;
+  }
+
+
+  .blur{
+  position: absolute; display: flex; justify-content: center; background: transparent; width: 90%; padding: 2rem; height: auto; margin-top: 15%;  backdrop-filter: blur(2rem); flex-direction: column; align-items: center; 
+}
+
+.blur h1{
+  font-size: 1.2rem; color: black;
+}
+
+.blur a{
+  padding: 0.5rem; background: white; color: black; width: 50%; text-decoration: none; text-align: center;
+}
+
+.blur a:hover{
+  padding: 0.5rem; background: white; color: black; width: 50%; text-decoration: none; text-align: center;
+}
+  section#home .row .me {
+    display: none;
+  }
+  section#home .row .picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .meMobile {
+    width: 60%;
+    height: 30%;
+    /* border: 1px solid red; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    margin-top: 20%;
+  }
+
+  section#about {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#about .note,
+  .skills {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  .col{
+    width: 100%;
+  }
+}

@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+  font-family: Nunito;
+}
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  display: flex;
+  background-color: #f0f0f0;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 55px;
+  /* first value : left to right, second value- top to botopm, third value- blurness */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  text-align: right;
+  padding-left: 0;
+  width: 80%;
+  margin: 0;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-inline: 0.5rem;
+  padding: 1rem;
+}
+
+/* nav ul li:first-child {
+  margin-right: 50rem;
+} */
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.mobileToggle {
+  display: none;
+}
+
+section#home {
+  width: 100%;
+  /* height: 100vh; */
+  height: auto;
+  background: red;
+  display: flex;
+  justify-content: center;
+  background: dodgerblue;
+  /* position: absolute; */
+}
+.blur {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  width: 90%;
+  padding: 4rem;
+  height: auto;
+  margin-top: 12%;
+  backdrop-filter: blur(2rem);
+  flex-direction: column;
+  align-items: center;
+}
+
+.blur h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.blur a {
+  padding: 1rem;
+  background: white;
+  color: black;
+  width: 20%;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: 1s;
+  margin-top: 1rem;
+}
+
+.blur a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* .blur a:hover{
+  padding: 0.5rem; background: white; color: black; width: 20%; text-decoration: none; text-align: center;
+} */
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+section#home .row {
+  display: flex;
+  width: 99%;
+  height: 90%;
+}
+
+section#home .row .me {
+  width: 50%;
+  /* border: 2px solid yellow; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0 0;
+
+  /* margin: 10% 0 0 0; */
+}
+
+section#home .me h1 {
+  font-size: 7rem;
+}
+.custom-list {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.custom-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+
+  
+}
+
+
+/* .display {
+  height: 50vh;
+  width: 100%;
+  background-color: dodgerblue;
+} */
+/* 
+.display {
+  height: 50vh;
+  width: 100%;
+  background-color: skyblue;
+  display: flex;
+} */
+
+section#home .row .picture {
+  /* border: 2px solid #333; */
+  height: 80%;
+  width: 40%;
+  border: 2px solid blue;
+  margin: 7% 0 0 0;
+  background-image: url(../img/image.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* margin-left: auto; */
+  transition: 0.4s opacity 0.4s;
+}
+.meMobile {
+  display: none;
+}
+/* .picture:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+} */
+
+/* .display h1 {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+
+.display h4 {
+  margin-top: 9.5rem;
+  margin-left: -10rem;
+} */
+ul li i:nth-child(1) {
+  color: red;
+}
+
+ul li:nth-child(2) i {
+  color: blue;
+}
+ul li:nth-child(3) i {
+  color: yellow;
+}
+
+ul li:nth-child(5) i {
+  color: dodgerblue;
+}
+ul li:nth-child(6) i {
+  color: green;
+}
+
+section#project ul li:nth-child(1) i {
+  color: yellow;
+}
+
+section#project ul li:nth-child(2) i {
+  color: red;
+}
+
+section#project ul li:nth-child(3) i {
+  color: blue;
+}
+
+/* section#project ul li:nth-child(1) i{
+  color: red;
+
+
+ } */
+
+section#about {
+  width: 90%;
+  height: auto;
+  display: flex;
+  padding: 1rem;
+}
+
+section#about .note p {
+  font-size: 1rem;
+  color: #333;
+  margin: 1rem 0 1rem 0;
+}
+
+section#about .note a {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: dodgerblue;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.3rem;
+  /* margin: 3rem 0 0 0; */
+}
+section#about .note a:hover {
+  background-color: rgb(147, 200, 252);
+  color: #333;
+}
+section#about .note,
+.skills {
+  width: 50%;
+  margin: 1rem 0 0 0;
+}
+
+body > h2 {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+body > p {
+  margin-left: 2rem;
+
+  font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+section#project {
+  width: 90%;
+  display: flex;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.col {
+  /* border: 2px solid #00f; */
+  height: 300px;
+  width: 30%;
+
+  margin-top: 1rem;
+  /* margin-left: 2rem; */
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid rgb(192, 192, 192);
+  transition: 0.4s;
+  transform: scale(0.9);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.col p {
+  color: #333;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.col ul {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 1rem;
+}
+.col ul li i {
+  font-size: 1.3rem;
+}
+.col:hover {
+  transform: scale(1);
+}
+
+.profile {
+  border: 2px solid grey;
+  height: 20vh;
+  width: 20vh;
+  border: 2px solid rgb(192, 192, 192);
+  background-color: silver;
+  border-radius: 10px;
+}
+
+.profile:hover {
+  background-color: rgb(247, 218, 218);
+}
+
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+p {
+  line-height: 1;
+  margin-left: -1rem;
+  font-size: 1.5rem;
+}
+
+.work {
+  height: 70vh;
+  width: 100%;
+  /* background-color: lightcyan; */
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: row wrap; */
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+.contact p {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+/* .work:hover {
+  background-color: rgb(188, 253, 253);
+} */
+
+nav ul li a {
+  color: #000;
+}
+nav ul li a:hover {
+  color: skyblue;
+}
+nav ul li a:active {
+  color: red;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.icons:hover {
+  transform: rotate(360deg);
+}

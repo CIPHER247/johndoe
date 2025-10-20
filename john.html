@@ -4,46 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JOHN DOE</title>
-    <link rel="stylesheet" href="john.css" />
+    <link rel="stylesheet" href="assets/css/john.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
   </head>
   <body>
     <nav>
+      <div class="name">
+        <h2>John Doe</h2>
+      </div>
+
       <ul>
-        <li>
-          <h2>John Doe</h2>
-        </li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skill</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#"><i class="fa fa-user"></i></a></li> -->
       </ul>
+
+      <div class="mobileToggle">
+        <i class="fa fa-bars"></i>
+      </div>
     </nav>
 
-    <section class="display">
-      <h1>John Doe</h1>
-      <h4>I'm a web developer</h4>
-      <div class="picture"></div>
+    <!-- <section id="home">
+      <div class="row">
+        <div class="me">
+          <h1>John Doe</h1>
+          <h4>I'm a web developer</h4>
+        </div>
+        <div class="picture">
+          <div class="meMobile">
+            <h1>John Doe</h1>
+            <h4>I'm a web developer</h4>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="home">
+      <video src="assets/videos/vid.mp4" muted autoplay loop >
+      </video>
+      <div class="blur">
+      <h1 >My name is michael</h1>
+     <a href="" >Meet me
+     <div class="span">
+
+     </div>
+     </a>
+
+      </div>
     </section>
+    <section id="about">
+      <div class="note">
+        <h2 style="font-size: 2.5rem;" id="about">About</h2>
 
-    <h2 id="about">About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum
+          error eum magni velit laboriosam vel ullam harum ipsam nam temporibus
+          est, necessitatibus unde laborum voluptatum molestias voluptas
+          recusandae incidunt!
+        </p>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum error
-      eum magni velit laboriosam vel ullam harum ipsam nam temporibus est,
-      necessitatibus unde laborum voluptatum molestias voluptas recusandae
-      incidunt!
-    </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet doloribus nisi non magni, aperiam repellat quam exercitationem. Dicta totam et maiores, assumenda alias recusandae. Nulla laborum debitis odio nisi.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, voluptate iste dolorum quisquam numquam tempore quidem autem repellat cum at voluptatem, recusandae veritatis illum atque minima impedit ea esse doloremque.</p>
 
-    <h2 id="skills">Skills</h2>
-    <ul class="custom-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-    </ul>
-<h2 class="title">Projects</h2>
-    <section class="work" id="project">
-      
-      <div class="project">
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="skills">
+        <h2 style="font-size: 2.5rem;">Skills</h2>
+        <ul class="custom-list">
+          <li>HTML <i class="fab fa-html5"></i></li>
+          <li>CSS <i class="fab fa-css3"></i></li>
+          <li>Javascript <i class="fab fa-js"></i></li>
+          <li>Typescript <i class="fab fa-ts"></i></li>
+          <li>React <i class="fab fa-react"></i></li>
+          <li>Node.js <i class="fab fa-node"></i></li>
+          <li>Mongo </li>
+         
+
+        </ul>
+        <!-- <marquee behavior="" direction=""> -->
+          <!-- <ul style="list-style: none; display: flex; gap: 1rem; margin-top: 1rem">
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul> -->
+        <!-- </marquee> -->
+      </div>
+    </section>
+    <h2 class="title">Projects</h2>
+    <section id="project">
+      <div class="col">
         <div class="profile left"></div>
         <h2>Project 1</h2>
         <p>
@@ -52,9 +114,14 @@
           facilis corporis. Nobis rerum atque doloremque aliquid in at similique
           placeat saepe natus.
         </p>
+          <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
       </div>
 
-      <div class="project">
+      <div class="col">
         <div class="profile left"></div>
         <h2>Project 2</h2>
         <p>
@@ -63,15 +130,79 @@
           facilis corporis. Nobis rerum atque doloremque aliquid in at similique
           placeat saepe natus.
         </p>
+        <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <div class="profile left"></div>
+        <h2>Project 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          voluptatum temporibus reiciendis placeat minus eligendi neque beatae
+          facilis corporis. Nobis rerum atque doloremque aliquid in at similique
+          placeat saepe natus.
+        </p>
+        <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="profile left"></div>
+        <h2>Project 4</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          voluptatum temporibus reiciendis placeat minus eligendi neque beatae
+          facilis corporis. Nobis rerum atque doloremque aliquid in at similique
+          placeat saepe natus.
+        </p>
+        <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="profile left"></div>
+        <h2>Project 5</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          voluptatum temporibus reiciendis placeat minus eligendi neque beatae
+          facilis corporis. Nobis rerum atque doloremque aliquid in at similique
+          placeat saepe natus.
+        </p>
+        <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="profile left"></div>
+        <h2>Project 6</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          voluptatum temporibus reiciendis placeat minus eligendi neque beatae
+          facilis corporis. Nobis rerum atque doloremque aliquid in at similique
+          placeat saepe natus.
+        </p>
+        <ul>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+        </ul>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <h2>Contact</h2>
-      <p><img src="email.svg" alt="icon" class="icons">John.doe@gmail.com</p>
-      <p><img src="phone.svg" alt="icon" class="icons">+125-456-7990</p>
+      <p><img src="assets/icons/email.svg" alt="icon" class="icons" />John.doe@gmail.com</p>
+      <p><img src="assets/icons/phone.svg" alt="icon" class="icons" />+125-456-7990</p>
     </section>
-
-    
   </body>
 </html>
